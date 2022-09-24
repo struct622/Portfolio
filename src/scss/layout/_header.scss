@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 24px;
+	background-color: #fff;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+}
+
+.logo {
+	font-size: 32px;
+	line-height: 40px;
+	color: #000;
+	
+	.logo_link {
+		display: block;
+	}
+}
+
+.tab {
+	display: flex;
+
+	.item {
+		padding: 5px;
+		font-size: 24px;
+		line-height: 30px;
+		color: #888;
+
+		&.on {
+			font-weight: 700;
+			color: #333;
+		}
+
+		& + .item {
+			margin-left: 10px;
+		}
+	}
+}
