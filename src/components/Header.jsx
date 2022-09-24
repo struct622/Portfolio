@@ -24,7 +24,7 @@ function Header(props) {
 	return (
 		<header id="header" className='header'>
 			<h1 className='logo'>
-				<Link to="/" className='logo_link'>DK</Link>
+				<Link to="/" className='logo_link'>LOWNESS</Link>
 			</h1>
 			<div className='tab'>
 				{tabList}
