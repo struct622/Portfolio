@@ -18,7 +18,7 @@ function Header(props) {
 	console.log('[Header.jsx] curRoute.pathname' + curRoute.pathname);
 
 	const tabList = tabListItem.map(
-		(tabListItem, index) => <Link key={index} to={tabListItem.route} className={'item ' + (curRoute.pathname === tabListItem.route ? 'on' : '')} >{tabListItem.name}</Link>
+		(tabListItem, index) => <Link key={index} to={tabListItem.route} className={'item' + (curRoute.pathname === tabListItem.route ? ' on' : '')} >{tabListItem.name}</Link>
 	);
 
 	return (
