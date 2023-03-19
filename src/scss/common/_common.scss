@@ -60,16 +60,6 @@ svg {
     z-index: 5000;
 }
 
-.content {
-    flex: 1 0 auto;
-}
-
-.notice.hidden {
-    & + .section {
-        margin-top: 6px;
-    }
-}
-
 .dimmed {
     position: fixed;
     top: 0;

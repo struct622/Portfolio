@@ -7,7 +7,7 @@ import Skill from './skill/Index';
 
 function Main(props) {
 	return (
-		<div className='container'>
+		<div id='container' role='main'>
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route path="/profile" element={<Profile />} />

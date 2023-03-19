@@ -1,0 +1,49 @@
+.desc_list {
+	.tit {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 24px;
+		color: #333;
+	}
+
+	.cont {
+		margin-top: 4px;
+		font-size: 16px;
+		line-height: 20px;
+		color: #777;
+	}
+
+	.link {
+		color: #0087ff;
+	}
+
+	& + .desc_list {
+		margin-top: 12px;
+	}
+
+	.cont_list {
+		.item {
+			position: relative;
+			padding-left: 12px;
+			font-size: 14px;
+			line-height: 18px;
+
+			& + .item {
+				margin-top: 2px;
+			}
+
+			&:before {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 4px;
+				width: 2px;
+				height: 2px;
+				margin: auto 0;
+				border-radius: 50%;
+				background-color: #777;
+				content: "";
+			}
+		}
+	}
+}
