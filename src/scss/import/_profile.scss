@@ -7,7 +7,7 @@
 	}
 
 	.cont {
-		margin-top: 4px;
+		margin-top: 8px;
 		font-size: 16px;
 		line-height: 20px;
 		color: #777;
@@ -15,10 +15,14 @@
 
 	.link {
 		color: #0087ff;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	& + .desc_list {
-		margin-top: 12px;
+		margin-top: 16px;
 	}
 
 	.cont_list {
@@ -44,6 +48,28 @@
 				background-color: #777;
 				content: "";
 			}
+		}
+	}
+
+	.task_list {
+		& + .task_list {
+			margin-top: 12px;
+		}
+
+		.tit {
+			font-size: 16px;
+			line-height: 20px;
+
+			& + .cont {
+				margin-top: 8px;
+			}
+		}
+
+		.cont {
+			margin-top: 4px;
+			font-size: 14px;
+			line-height: 18px;
+			color: #444;
 		}
 	}
 }
